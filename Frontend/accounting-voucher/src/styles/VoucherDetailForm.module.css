@@ -1,0 +1,34 @@
+.detailRow {
+    display              : grid;
+    grid-template-columns: 2fr 3fr 2fr 2fr 40px;
+    gap                  : 1rem;
+    align-items          : center;
+    padding              : 0.75rem;
+    border               : 1px solid #ddd;
+    border-radius        : 6px;
+    background-color     : #fff;
+    margin-bottom        : 1rem;
+}
+
+.detailRow input,
+.detailRow select {
+    padding         : 0.5rem;
+    font-size       : 1rem;
+    border          : 1px solid #ccc;
+    border-radius   : 4px;
+    background-color: #fefefe;
+}
+
+.removeBtn {
+    background-color: #dc3545;
+    color           : white;
+    border          : none;
+    border-radius   : 4px;
+    font-weight     : bold;
+    cursor          : pointer;
+    padding         : 0.5rem;
+}
+
+.removeBtn:hover {
+    background-color: #b02a37;
+}

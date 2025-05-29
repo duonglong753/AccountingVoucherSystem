@@ -1,0 +1,60 @@
+.pageContainer {
+    padding         : 2rem;
+    background-color: #f4f6f8;
+    min-height      : 100vh;
+}
+
+.voucherFormWrapper {
+    max-width       : 900px;
+    margin          : 0 auto;
+    background-color: #ffffff;
+    padding         : 2rem;
+    border-radius   : 12px;
+    box-shadow      : 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.detailsSection {
+    margin-top: 2rem;
+}
+
+.detailsSection h4 {
+    font-size    : 1.25rem;
+    margin-bottom: 1rem;
+    color        : #2c3e50;
+}
+
+.addDetailBtn {
+    margin-top      : 1rem;
+    padding         : 0.5rem 1rem;
+    background-color: #28a745;
+    color           : white;
+    border          : none;
+    border-radius   : 6px;
+    cursor          : pointer;
+    font-weight     : 500;
+}
+
+.addDetailBtn:hover {
+    background-color: #218838;
+}
+
+.submitSection {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.submitBtn {
+    padding         : 0.75rem 1.5rem;
+    font-size       : 1rem;
+    background-color: #007bff;
+    color           : white;
+    border          : none;
+    border-radius   : 6px;
+    font-weight     : bold;
+    cursor          : pointer;
+}
+
+.submitBtn:disabled {
+    opacity: 0.6;
+    cursor : not-allowed;
+}

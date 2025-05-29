@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using AccountingVoucherSystem.Models;
+using AccountingVoucherSystem.Services.Implementations;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
 
@@ -134,6 +135,7 @@ public partial class AccountingDbContext : DbContext
             entity.Property(e => e.Description).HasMaxLength(255);
             entity.Property(e => e.Name).HasMaxLength(100);
         });
+        modelBuilder.Entity<VoucherIdResult>().HasNoKey();
 
         OnModelCreatingPartial(modelBuilder);
     }

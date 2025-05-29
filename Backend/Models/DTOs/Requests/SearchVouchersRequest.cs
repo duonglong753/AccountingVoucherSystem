@@ -2,7 +2,7 @@
 {
     public class SearchVouchersRequest
     {
-        public string VoucherNumber { get; set; }
+        public string? VoucherNumber { get; set; }
         public int? VoucherTypeId { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }

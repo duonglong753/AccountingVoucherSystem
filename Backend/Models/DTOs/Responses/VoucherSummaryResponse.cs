@@ -9,8 +9,8 @@
         public string VoucherTypeName { get; set; }
         public string Description { get; set; }
         public decimal TotalAmount { get; set; }
-        public int DetailCount { get; set; }
         public DateTime CreatedAt { get; set; }
+        public int TotalCount { get; set; }
     }
 
 }

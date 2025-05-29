@@ -22,9 +22,7 @@ namespace AccountingVoucherSystem.Services.Implementations
         {
             try
             {
-                var voucherTypes = await _context.Set<LookupItem>()
-                    .FromSqlRaw("CALL sp_GetVoucherTypes()")
-                    .ToListAsync();
+                var voucherTypes = await _context.Database.SqlQueryRaw<LookupItem>("CALL sp_GetVoucherTypes()").ToListAsync();
 
                 _logger.LogInformation("Retrieved {Count} voucher types", voucherTypes.Count);
                 return voucherTypes;
@@ -40,9 +38,7 @@ namespace AccountingVoucherSystem.Services.Implementations
         {
             try
             {
-                var transactionTypes = await _context.Set<LookupItem>()
-                    .FromSqlRaw("CALL sp_GetTransactionTypes()")
-                    .ToListAsync();
+                var transactionTypes = await _context.Database.SqlQueryRaw<LookupItem>("CALL sp_GetTransactionTypes()").ToListAsync();
 
                 _logger.LogInformation("Retrieved {Count} transaction types", transactionTypes.Count);
                 return transactionTypes;
